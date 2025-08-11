@@ -14,7 +14,7 @@ _Include the name of the function, its parameters, return value, and side effect
 
 ```python
 
-def how_long_to_read(text, wpm:int=200) -> str:
+def how_long_to_read(text, wpm:int=200):
     """takes a string text and estimates how long it would take to read at a pace of 200 words a minute (60 seconds)
 
     Parameters: 
@@ -40,13 +40,12 @@ _Make a list of examples of what the function will take and return._
 Estimate in minutes and seconds how long 
 a string will take to be read @ 200 wpm
 """
-how_long_to_read("This is a short example text that you might want to read quickly.") => 
-    "Estimated reading time: 0 minute(s) and 2 second(s)"
+how_long_to_read("This is a short example text that you might want to read quickly.") => "word_count/wpm minute(s) to read"
 
 """
 Throw an error if given no text
 """
-how_long_to_read("") => "No text found, please enter text"
+how_long_to_read("") => "Empty String, please enter some text"
 ```
 
 _Encode each example as a test. You can add to the above list as you go._
